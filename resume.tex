@@ -1,0 +1,166 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/mwong94}{\Large Maxwell Wong}} & Email : \href{mailto:mlwong2@uci.edu}{mlwong2@uci.edu}\\
+  \href{https://github.com/mwong94}{https://github.com/mwong94} & Mobile : +1-858-431-9185 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UCI}{Irvine, CA}
+      {Bachelor of Science in Data Science}{August 2015 -- Present}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {UCSD Keck Center for fMRI}{San Diego, CA}
+      {Independent Research Intern}{January 2013 -- June 2014}
+      \resumeItemListStart
+        \resumeItem{Magnetic Resonance Fingerprinting}
+          {MR Fingerprinting was a new MR image reconstruction method at the time.
+          Independently validated the method, as well as explored its boundaries and properties.
+          Presented my findings and an abstract at ISMRM 2015.}
+        \resumeItem{Kernel based image reconstruction}
+          {Implemented a kernel based MR image reconstruction algorithm using OpenCL for parallization.}
+      \resumeItemListEnd
+      \resumeSubheading
+        {NIH/NIMH}{Bethesda, MD}
+        {Summer Internship Program}{June 2017 -- September 2017}
+        \resumeItemListStart
+          \resumeItem{Semantic vector extraction}
+            {Carried out research within a group to develop and optimize machine learning
+            algorithms to extract semantic vector information from MR brain data.
+            Participated in weekly lab meetings, and presented my findings at a NIH-wide
+            poster day.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Reddit Front Page Predictor}
+      {A two part project: (1) Reddit crawler to collect time series data on all posts
+      in specified subreddits and (2) Machine Learning model to predict whether or not
+      a post will eventually make it to the frontpage. \\
+      {\sl https://github.com/mwong94/reddit}}
+    \resumeSubItem{PDQ Android Game}
+      {Developed a simple word game on Android built using Fragments, inspired by
+      the card game PDQ. The game displays randomly generated problems, and provides
+      solutions drawn from a SQLite database. \\
+      {\sl https://github.com/mwong94/PDQFragment}}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item \textbf{Languages}{: Python, Java, C, C++, R, Bash, JSON, XML, Perl, YAML}
+    \item \textbf{SQL}{: MySQL, PostgreSQL, SQLite}
+    \item \textbf{Machine Learning}{: scikit-learn, Keras/TensorFlow, CNN, Autoencoders}
+    \item{
+      \textbf{Operating Systems Experience}{:  \resumeSubHeadingListStart
+                                    \item{MacOS, Windows, UNIX}
+                                    \item{Extensive experience with Debian, RedHat families}
+                                    \item{Virtualization: QEMU, KVM, Xen, Proxmox}
+                                  \resumeSubHeadingListEnd}
+    }
+    \item \textbf{LaTeX}{: This resume is in LaTeX ({\sl https://github.com/mwong94/resume})}
+    \item \textbf{Technologies}{: AWS, GCE, Beowulf clusters}
+ \resumeSubHeadingListEnd
+
+%-----------OTHER EXPERIENCE-----------------
+\section{Other}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Additive Manufacturing}{June 2016 -- Present}
+      {FDM/DLP 3D printing}{}
+      \resumeItemListStart
+        \resumeItem{Industrial Additive Manufacturing}
+          {Enrolled in an Additive Manufacturing course in the Engineering department.
+          Worked with industrial 3D printing systems (Stratasys PolyJet/Fortus) as well
+          as hobbyist style printers.}
+        \resumeItem{Hobbyist Printing}
+          {Built and maintain my own DIY FDM and DLP printers.}
+      \resumeItemListEnd
+
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
